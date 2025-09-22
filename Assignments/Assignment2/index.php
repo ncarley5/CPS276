@@ -1,6 +1,6 @@
 <?php
 $numbers = range(1, 50);
-$evenNumbers = "";
+$evenNumbers = "Even Numbers: ";
 foreach ($numbers as $number){
     if($number % 2 == 0){
         $evenNumbers = $evenNumbers . $number . " - ";
