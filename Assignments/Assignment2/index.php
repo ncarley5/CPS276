@@ -20,10 +20,10 @@ $form = <<<HTML
 HTML;
 
 function createTable($rows, $columns) {
-    $table = "<table border='1' cellpadding='5' cellspacing='0' style='width: 100%;' border-collapse: collapse;>";
-    for ($i = 1; $i < $rows; $i++) {
+    $table = "<table border='1' cellpadding='5' cellspacing='0' style='width: 100%;'>";
+    for ($i = 1; $i < $rows + 1; $i++) {
         $table .= "<tr>";
-        for ($j = 1; $j < $columns; $j++) {
+        for ($j = 1; $j < $columns + 1; $j++) {
             $table .= "<td>Row $i, Column $j</td>";
         }
         $table .= "</tr>";
@@ -32,6 +32,14 @@ function createTable($rows, $columns) {
     
     return $table;
 }
+
+# 1. The assignment specifies that "all PHP written at the top above the HTML Doctype". Explain the implications of this placement on how the server processes the page. What advantage does generating all PHP variables ($evenNumbers, $form, $table) before any HTML output provide in terms of execution flow?
+
+# 2. Beyond simply finding even numbers, describe a scenario where you would use a similar foreach loop with a conditional (if) statement to filter or process elements from an array based on different criteria like finding all numbers divisible by 7
+
+# 3. Discuss the primary benefits of using heredoc for embedding large blocks of HTML or other text within PHP strings, especially when that text contains quotes or multiple lines. How does it improve code readability compared to concatenating strings with double quotes?
+
+# 4. The createTable function uses nested for loops to build the table. Describe the role of each loop: which one is responsible for iterating through the rows, and which for the columns? How does the concatenation (.=) inside these loops incrementally build the complete HTML table string?
 
 ?>
 
