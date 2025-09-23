@@ -6,23 +6,24 @@ foreach ($numbers as $number){
         $evenNumbers = $evenNumbers . $number . " - ";
     }
 }
+$evenNumbers = substr($evenNumbers, 0, -3);
 $form = <<<HTML
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <div class="mb-3">
         <label for="FormControlInput1" class="form-label">Email address</label>
         <input type="email" class="form-control" id="FormControlInput1" placeholder="name@example.com">
     </div>
-    <div class="mb-3">
+    <div class="mb-3 col">
         <label for="FormControlTextarea1" class="form-label">Example textarea</label>
         <textarea class="form-control" id="FormControlTextarea1" rows="3"></textarea>
     </div>
 HTML;
 
 function createTable($rows, $columns) {
-    $table = "<table border='1'>";
-    for ($i = 0; $i < $rows; $i++) {
+    $table = "<table border='1' cellpadding='5' cellspacing='0' style='width: 100%;' border-collapse: collapse;>";
+    for ($i = 1; $i < $rows; $i++) {
         $table .= "<tr>";
-        for ($j = 0; $j < $columns; $j++) {
+        for ($j = 1; $j < $columns; $j++) {
             $table .= "<td>Row $i, Column $j</td>";
         }
         $table .= "</tr>";
