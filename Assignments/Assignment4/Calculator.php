@@ -24,7 +24,7 @@
                                 $ans = "The calculation is $num1 / $num2. The answer is cannot divide a number by zero.";
                             } else{
                                 $sol = $num1 / $num2;
-                            $ans = "The calculation is $num1 / $num2. The answer is $sol.";
+                                $ans = "The calculation is $num1 / $num2. The answer is $sol.";
                             }
                         }
                     } else {

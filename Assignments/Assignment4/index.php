@@ -18,6 +18,14 @@ $result .= $Calculator->calc("*", 10);
 $result .= $Calculator->calc("+","a",10);
 $result .= $Calculator->calc("+",10,"a");
 $result .= $Calculator->calc(10);
+
+//Explain the purpose of require_once "Calculator.php"; in th index.php page. What would be the difference if include or require were used instead of require_once?
+//How does the divide method specifically prevent and report an error for division by zero? Why is this a critical consideration in calculator applications?
+//If you were tasked with adding a new mathematical operation (e.g., exponentiation ^) to this calculator, what specific modifications would be required in both Calculator.php?
+//Explain the difference between the Calculator class and the $Calculator object. Why do we create an instance of the class?
+//Why is it important to check that the last two parameters are numbers in our Calculator class?
+//Index.php handles the display of the results using HTML, while Calculator.php contains the core calculation logic. Discuss the importance of separating user interface (presentation) concerns from business logic.
+
 ?>
 
 <!DOCTYPE html>
