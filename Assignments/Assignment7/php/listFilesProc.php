@@ -1,5 +1,5 @@
 <?php
-require_once "PdoMethods.php";
+require_once "../Assignment7/classes/Pdo_methods.php";
 
 $pdo = new PdoMethods();
 
