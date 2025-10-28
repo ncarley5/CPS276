@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/classes/Directories.php';
+require_once __DIR__ . '/classes/Directories.php'; //learned from AI
 
 $message = '';
 $link = '';
@@ -72,10 +72,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <input type="submit" value="Submit" />
     
     </form>
-
-    <?php if (!empty($fileContent)): ?>
-        <h3>Contents of readme.txt:</h3>
-        <pre><?= $fileContent ?></pre>
-    <?php endif; ?>
+    
 </body>
 </html>

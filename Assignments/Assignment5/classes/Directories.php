@@ -2,13 +2,13 @@
 
 class Directories
 {
-    private $baseDir = __DIR__ . '/../directories/';
+    private $baseDir = __DIR__ . '/../directories/'; //learned from AI
 
     public function create(string $dirname, string $content): array
     {
         $dirname = trim($dirname);
 
-        if (!ctype_alpha($dirname)) {
+        if (!ctype_alpha($dirname)) { //learned from AI
             return ['success' => false, 'message' => 'Directory name must contain only letters.'];
         }
 
