@@ -1,6 +1,5 @@
 <?php
 require_once "../Assignment7/classes/Pdo_methods.php";
-//I couldn't figure out why this wouldn't work
 
 $pdo = new PdoMethods();
 $output = '';
