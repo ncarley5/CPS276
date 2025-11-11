@@ -81,8 +81,9 @@
                  $pass = $_POST['password'];
                  $confpass = $_POST['confirm_password'];
                  if ($pass != $confpass) {
-                    $state = "Your passwords do not match";
-                 } else{
+                    $formConfig['confirm_password']['error'] = "Passwords do not match";
+                    $formConfig['masterStatus']['error'] = true;
+                } else{
                     $firstName = $_POST['first_name'];
                     $lastName = $_POST['last_name'];
                     $sql = "INSERT INTO users (first_name, last_name, email, password) VALUES (:first_name, :last_name, :email, :password)";
