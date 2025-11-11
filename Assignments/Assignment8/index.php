@@ -2,6 +2,12 @@
 require_once 'classes/Date_time.php';
 $dt = new Date_time();
 $notes = $dt->checkSubmit();
+
+//Why are we using timestamps instead of the date.
+//Is there any advantage to using the Date_time class over just having a PHP function file.  What are they?
+//When a user requests to view notes within a specific date range, what logical steps must the application take to retrieve and present only the relevant notes, show that in your code and explan it?
+//Explain the importance of converting dates and times into a standardized format (like a timestamp) before storing them in a database. What problems might arise if you don't?
+//Imagine the application becomes very popular and has millions of notes. What performance considerations might arise when displaying notes, and how could you address them?
 ?>
 
 <!doctype html>
