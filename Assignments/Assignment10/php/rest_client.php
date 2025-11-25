@@ -67,4 +67,9 @@ function getWeather() {
         }
     }
 }
+//Explain the difference between a REST API client and a REST API server. What role does this code play in that relationship?
+//Why is JSON commonly used for API responses? What are the benefits of using JSON over other data formats like XML?
+//Explain the difference between a REST API client and a REST API server. What role does this code play in that relationship?
+//How should an application handle different types of API responses (success, error, empty data)? What considerations are important for each scenario?
+//What is cURL used for in web development?
 ?>
